@@ -17,7 +17,7 @@ body {
   height: 52px;
   padding: 1em;
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.9;
   width: 100%; }
 
 /*-- Digitalist Logo --*/
@@ -27,90 +27,10 @@ body {
 .digitalist-logo img {
   height: 30px; }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column; }
-
-.main-pic > img {
-  width: 100%;
-  z-index: -10; }
-
-.main-element {
-  background-color: black;
-  margin: 0 auto;
-  padding: 0 1em;
-  text-align: center;
-  color: white;
-  position: absolute;
-  width: 500px;
-  height: 200px;
-  top: 50%;
-  left: 50%;
-  margin-top: -100px;
-  margin-left: -250px; }
-
-.sub-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap; }
-
-.sub-container .element {
-  align-content: center;
-  text-align: center;
-  padding: 1em; }
-
-.sub-container .element img {
-  position: relative;
-  width: 100px; }
-
-/*-- Button --*/
-button.fancy-btn {
-  background: -moz-linear-gradient(left, #04b3b9 0%, #0abda2 100%);
-  background: -webkit-linear-gradient(left, #04b3b9 0%, #0abda2 100%);
-  background: linear-gradient(to right, #04b3b9 0%, #0abda2 100%);
-  color: #fff;
-  padding: .5rem 2rem;
-  border-radius: 5px;
-  text-transform: uppercase;
-  margin-top: 1rem;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-  cursor: pointer; }
-
-/*-- Search Field --*/
-#search-field {
-  order: 2;
-  margin-right: 1em; }
-
-#search-field input[type=search] {
-  width: 15px;
-  padding-left: 22px;
-  color: black;
-  cursor: pointer; }
-
-#search-field input[type=search]:focus {
-  width: 130px;
-  padding-left: 32px;
-  color: white;
-  background: transparent;
-  cursor: auto; }
-
-input[type=search] {
-  background: #000000 url(https://parade.com/wp-content/themes/wp-theme/img/navigation/search.svg) no-repeat 9px center;
-  padding: 9px 10px 9px 32px;
-  border-color: black;
-  -webkit-border-radius: 10em;
-  -moz-border-radius: 10em;
-  border-radius: 10em;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  transition: all .5s; }
-
 /*----- Dropdown Menu -----*/
 .dropmenu {
-  order: 3; }
+  order: 3;
+  opacity: 1 !important; }
 
 .dropbtn {
   color: white;
@@ -127,8 +47,7 @@ input[type=search] {
   top: 52px;
   padding: 2em 2em;
   width: 100vw;
-  height: 100vh;
-  z-index: 100000; }
+  height: 100vh; }
 
 .dropdown-content a {
   color: white;
@@ -152,7 +71,8 @@ ul.int-menu {
 
 ul.int-menu li {
   display: block;
-  position: relative; }
+  position: relative;
+  width: fit-content; }
 
 ul.int-menu li a {
   display: block;
@@ -164,5 +84,131 @@ ul.int-menu li ul {
 ul.int-menu li:hover > ul {
   display: block;
   position: absolute; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+#main-pic {
+  background: url(https://www.hospitality-group.nl/wp-content/uploads/2016/05/HD-PGGM1363.jpg);
+  background-origin: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+  z-index: -10;
+  -webkit-box-shadow: 0px 6px 21px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 21px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 6px 21px -4px rgba(0, 0, 0, 0.75); }
+
+#main-pic::after {
+  background: rgba(0, 0, 0, 0.6); }
+
+.main-element {
+  background-color: black;
+  margin: 0 auto;
+  padding: 0 1em;
+  text-align: center;
+  color: white;
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -250px;
+  z-index: -1; }
+
+.main-element p {
+  font-size: 0.8em; }
+
+.sub-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 1em 1em 3em; }
+
+.sub-container .element {
+  align-content: center;
+  text-align: center;
+  padding: 1em 1.5em; }
+
+.sub-container .element img {
+  position: relative;
+  width: 100px;
+  z-index: -10; }
+
+/*-- Button Style --*/
+button.fancy-btn {
+  background: -moz-linear-gradient(left, #04b3b9 0%, #0abda2 100%);
+  background: -webkit-linear-gradient(left, #04b3b9 0%, #0abda2 100%);
+  background: linear-gradient(to right, #04b3b9 0%, #0abda2 100%);
+  color: #fff;
+  padding: .5rem 2rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.8em;
+  margin-top: 1rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer; }
+
+/*-- Search Field --*/
+#search-field {
+  order: 2;
+  margin-right: 1em; }
+
+#search-field input[type=search] {
+  width: 15px;
+  padding-left: 22px;
+  color: black;
+  cursor: pointer; }
+
+#search-field input[type=search]:focus {
+  width: 130px;
+  padding-right: 1.5em;
+  color: white;
+  background-color: transparent;
+  cursor: auto; }
+
+input[type=search] {
+  background: #000000 url(https://parade.com/wp-content/themes/wp-theme/img/navigation/search.svg) no-repeat 9px center;
+  padding: 9px 10px 9px 32px;
+  border-color: black;
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s; }
+
+@media only screen and (max-width: 768px) {
+  #main-pic {
+    height: 400px; }
+
+  .main-element {
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 1em;
+    top: 17em;
+    left: 0;
+    margin-top: 0;
+    margin-left: 0; }
+
+  h1 {
+    font-size: 1.5em; }
+
+  p {
+    font-size: 0.9em; }
+
+  .sub-container {
+    flex-direction: column;
+    margin: 1em auto; } }
 
 /*# sourceMappingURL=style.css.map */
