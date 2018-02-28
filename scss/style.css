@@ -86,7 +86,7 @@ header ul.int-menu {
   list-style: none;
   text-decoration: none; }
 
-header ul.int-menu li {
+header ul.int-menu li a {
   display: block;
   position: relative;
   width: fit-content; }
@@ -103,9 +103,7 @@ header ul.int-menu li:hover > ul {
   position: absolute; }
 
 main {
-  overflow: auto; }
-
-main .container {
+  overflow: auto;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -170,7 +168,7 @@ main .sub-container .card img {
   z-index: -10; }
 
 @media only screen and (max-width: 768px) {
-  h1 {
+  h2 {
     font-size: 1.5em; }
 
   p {
