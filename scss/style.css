@@ -91,12 +91,9 @@ header ul.int-menu li a {
   position: relative;
   width: fit-content; }
 
-header ul.int-menu li a {
-  display: block;
-  text-decoration: none; }
-
 header ul.int-menu li ul {
-  display: none; }
+  display: none;
+  list-style: none; }
 
 header ul.int-menu li:hover > ul {
   display: block;
